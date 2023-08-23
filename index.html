@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Explorer</title>
+    <script src="action.js"></script>
+    <script src="dispatcher.js"></script>
+    <script src="index.js"></script>
+    <script src="operation.js"></script>
+    <script src="store.js"></script>
+    <script src="view.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body onload="sudoMain()">
+    <!-- main window  -->
+    <div id="window">
+      <!-- title-bar  -->
+      <div id="title-bar">
+        <span id="title-content">
+          <span id="title-icon"><img src="static/folder.png" alt="File-Icon" height="15px"/></span>
+          <span id="title-name">File Explorer</span>
+        </span>
+        <!-- <span id="title-options">
+            <span id="minimise"><img class="icon" src="static/minimize-sign.png" alt="" height="15px"></span>
+            <span id="maximize"><img class="icon" src="static/move.png" alt="" height="15px"></span>
+            <span id="resize"><img class="icon" src="static/close.png" alt="" height="15px"></span>
+        </span> -->
+      </div>
+
+      <!-- menu-bar  -->
+      <div id="menu-bar">
+        <span id="menu-options-bar">
+          <span class="menu-options">File</span>
+          <span class="menu-options">Home</span>
+          <span class="menu-options">View</span>
+        </span>
+      </div>
+
+      <!-- utility-bar  -->
+      <div id="utility-bar">
+        <div id="path-utility">
+            <span id="file-path-label">File path</span>
+            <span id="file-path-field">root > </span>
+        </div>
+
+        <div id="search-utility">
+            <span id="search-icon"><img class="icon" src="static/loupe.png" alt=""></span>
+            <input id="search-field" type="text" placeholder="Search file here">
+        </div>
+      </div>
+
+      <div id="separator"></div>
+
+      <!-- content-area  -->
+      <div id="content">
+        <div id="file-explorer">
+
+            <!-- item name input  -->
+            <input type="text" id="input-item-name" placeholder="Input item name">
+
+            
+            <div id="item-structure">
+                
+            </div>
+        </div>
+
+        <!-- horizontal separator  -->
+        <div id="content-separator"></div>
+
+        <!-- search result section  -->
+        <div id="search-results">
+
+            <!-- search result count  -->
+            <div id="search-count">
+                0 Items matched 
+            </div>
+
+            <!-- search result table  -->
+            <div id="search-table-section">
+                <table id="search-table">
+                    <tr>
+                        <th>File Name</th>
+                        <th>File Id</th>
+                        <th>File Type</th>
+                        <th>File Level</th>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>coming </td>
+                        <td>soon...</td>
+                        <td></td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+      </div>
+
+      <!-- footer-bar  -->
+      <div id="footer">
+        <span id="total-item-count">
+            Total items: --
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
